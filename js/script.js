@@ -60,7 +60,6 @@ $(document).ready(function(){
 		speed:1000,
 		autoplaySpeed:2000,
 		infinite: false,
-		// variableWidth: true,
 		asNavFor: '.events__slider',
 		responsive:[
 			{
