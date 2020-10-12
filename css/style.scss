@@ -460,6 +460,14 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 		}
 	}
 	.events__slider {
+		.slick-track {
+		display: flex;
+		justify-content: center;
+		
+	}
+	.slick-list {
+		overflow: hidden;
+	}
 		background-color: #fff;
 		@media (max-width: 1134px) {
 			margin: 30px 0px 0px 0px;
@@ -787,6 +795,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 		margin-left: 0px;
 	}
 	.slick-slider{
+		// min-width: 0;
 	}
 	.slick-track {
 		display: flex;

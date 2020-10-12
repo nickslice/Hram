@@ -61,6 +61,7 @@ $(document).ready(function(){
 		autoplaySpeed:2000,
 		infinite: false,
 		// variableWidth: true,
+		asNavFor: '.events__slider',
 		responsive:[
 			{
 				breakpoint: 1080,
@@ -82,5 +83,13 @@ $(document).ready(function(){
 			}
 		]
 	
+	});
+	$('.events__slider').slick({
+		arrows: false,
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll:1,
+		speed:1000,
+		asNavFor: '.slider-nav',
 	});
 });
