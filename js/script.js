@@ -50,3 +50,37 @@ $('.menu__link').on('click', function(){
     $('body').removeClass('lock');
 });
 
+$(document).ready(function(){
+	$('.slider-nav').slick({
+		arrows:true,
+		dots:false,
+		slidesToShow:4,
+		slidesToScroll:1,
+		autoplay: false,
+		speed:1000,
+		autoplaySpeed:2000,
+		infinite: false,
+		// variableWidth: true,
+		responsive:[
+			{
+				breakpoint: 1080,
+				settings: {
+					slidesToShow:3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow:3
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow:3
+				}
+			}
+		]
+	
+	});
+});

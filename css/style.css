@@ -347,6 +347,16 @@ h1, h2, h3 {
   padding: 31px 0px 71px 0px;
   background-color: #f8f8f8;
 }
+.events .buttons__block {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1134px) {
+  .events .buttons__block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .events .previous__btn {
   margin: 25px 0px 0px 24px;
   cursor: pointer;
@@ -535,7 +545,7 @@ h1, h2, h3 {
   position: absolute;
   content: "";
   direction: block;
-  width: 1px;
+  width: 0.5px;
   height: 101%;
   left: 50%;
   top: 0;
@@ -854,4 +864,74 @@ h1, h2, h3 {
   width: 100%;
   height: 1px;
   background-color: #808080;
+}
+
+.slider-nav {
+  width: 330px;
+  margin: 25px 0px 0px 0px;
+  margin-left: 35px;
+  transform: translate(-65%, 0);
+  position: relative;
+  padding: 0px 33px;
+}
+@media (max-width: 1134px) {
+  .slider-nav {
+    transform: translate(0%, 0);
+    margin-left: 0px;
+  }
+}
+.slider-nav .slick-track {
+  display: flex;
+  justify-content: center;
+}
+.slider-nav .slick-list {
+  overflow: hidden;
+}
+.slider-nav .slick-slide.slick-current {
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.04);
+  background-color: #449653;
+  color: #fff;
+}
+.slider-nav .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  width: 7px;
+  height: 18px;
+  font-size: 0;
+}
+.slider-nav .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/slider_left.svg") 0 0/100% no-repeat;
+}
+@media (max-width: 350px) {
+  .slider-nav .slick-arrow.slick-prev {
+    left: 20px;
+  }
+}
+.slider-nav .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/slider_right.svg") 0 0/100% no-repeat;
+}
+@media (max-width: 350px) {
+  .slider-nav .slick-arrow.slick-next {
+    right: 20px;
+  }
+}
+.slider-nav .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+.slider-nav .nav__item {
+  text-align: center;
+  margin-right: 10px;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-nav .nav__item:last-child {
+  margin-right: 0;
 }
