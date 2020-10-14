@@ -37,7 +37,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 	}
 	.row__content {
 		// position: relative;
-		padding: 37px 0px 45px 0px;
+		padding: 37px 15px 45px 15px;
 		width: 100%;
 	}
 	hr {
@@ -167,7 +167,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 
 .home__slider {
 	// position: relative;
-
+	// width: 100%;
 	/* Слайдер */
 .slick-slider{
 }
@@ -180,6 +180,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 /* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
+	position: relative;
 }
 /* Лента слайдов */
 .slick-track{
@@ -211,6 +212,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 	}
 }
 .slick-dots li{
+	
 	margin: 0px 9px 0px 0px;
 	&:last-child {
 		margin: 0px 0px 0px 0px;
@@ -265,6 +267,9 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 	   line-height: 1;
 	   letter-spacing: 0.3px;
 	   color: #404040;
+	   @media (max-width: 450px) {
+	   	font-size: 50px;
+	   }
 	}
 	.content__text {
 		font-size: 18px;
@@ -410,6 +415,9 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 		   line-height: 1.63;
 		   letter-spacing: 0.08px;
 		   color: #737373;
+		   @media (max-width: 1134px) {
+		   	text-align: center;
+		   }
 		}
 		.event__buttons {
 			width: 100%;
@@ -460,11 +468,14 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 		}
 	}
 	.events__slider {
+		.slick-dots li{
+			display: none;
+		}
 		.slick-track {
-		display: flex;
-		justify-content: center;
+			display: flex;
+			justify-content: center;
 		
-	}
+		}
 	.slick-list {
 		overflow: hidden;
 	}
@@ -473,6 +484,7 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 			margin: 30px 0px 0px 0px;
 		}
 		.slider__items {
+			width: 552px;
 			display: flex;
 			flex-wrap: wrap;
 			position: relative;
@@ -633,9 +645,9 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
   		display: flex;
   		flex-direction: column;
   		justify-content: center;
-  		padding: 0px 35px;
+  		padding: 15px 35px;
   		@media (max-width: 450px) {
-  			width: 308px;
+  			width: 280px;
  			height: 211px;
   		}
 	}
@@ -650,6 +662,9 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
+		@media (max-width: 450px) {
+  			margin: 0px 0px 15px 0px;
+  		}
 	}
 	.block__image {
 		width: 288px;
@@ -810,7 +825,9 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
   		background-color: #449653;
   		color: #fff;
 	}
-	
+	.slick-dots li{
+			display: none;
+	}
 	.slick-arrow{
 		position: absolute;
 		z-index: 10;
@@ -846,7 +863,6 @@ h1,h2,h3{font-family: Cormorant Infant, serif;}
 	   height: 56px;
 	   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.04);
 	   background-color: #fff;
-	   // color: black;
 	   display: flex;
 	   align-items: center;
 	   justify-content: center;
